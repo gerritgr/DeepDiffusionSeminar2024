@@ -1,6 +1,6 @@
 # Diffusion Seminar 2024 Tutorials
 
-<img src="https://mosi.uni-saarland.de/assets/img/robotlab.jpg" width="200" alt="Robo in lab">
+<img src="https://mosi.uni-saarland.de/assets/img/robotlab.jpg" width="500" alt="Robo in lab">
 
 
 This is the official repository of the [2024 Diffusion Seminar](https://mosi.uni-saarland.de/lectures/23_2_deep_diffusion/) at Saarland University.
