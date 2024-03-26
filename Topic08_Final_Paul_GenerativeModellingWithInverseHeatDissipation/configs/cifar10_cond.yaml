@@ -1,0 +1,56 @@
+training:
+  batch_size: 128
+  n_iters: 50000
+  snapshot_freq: 10000
+  log_freq: 50
+  eval_freq: 100
+  sampling_freq: 1000
+  snapshot_freq_for_preemption: 1000
+
+eval:
+  batch_size: 256
+
+data:
+  dataset: 'CIFAR10'
+  image_size: 32
+  num_classes: 10
+  random_flip: false
+  centered: false
+  uniform_dequantization: false
+  num_channels: 3
+
+model:
+  K: 200
+  sigma: 0.01
+  dropout: 0.1
+  model_channels: 128
+  channel_mult: [1, 2, 2, 2]
+  conv_resample: true
+  num_heads: 1
+  conditional: true
+  attention_levels: [2, 3]
+  ema_rate: 0.999
+  normalization: 'GroupNorm'
+  nonlinearity: 'swish'
+  num_res_blocks: 4
+  use_fp16: false
+  use_scale_shift_norm: false
+  resblock_updown: false
+  use_new_attention_order: true
+  num_head_channels: -1
+  num_heads_upsample: -1
+  skip_rescale: true
+  blur_sigma_max: 24
+  blur_sigma_min: 0.5
+  
+optim:
+  weight_decay: 0
+  optimizer: 'Adam'
+  lr: 0.0002
+  beta1: 0.9
+  eps: 1e-08
+  warmup: 5000
+  grad_clip: 1.0
+  automatic_mp: true
+
+seed: 42
