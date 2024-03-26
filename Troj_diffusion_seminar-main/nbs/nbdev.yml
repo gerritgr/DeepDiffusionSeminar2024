@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "Tutorial: TrojDiff-Trojan Attacks on Diffusion Models"
+  site-url: "https://akansh12.github.io/Troj_diffusion_seminar"
+  description: "Advanced Topics in Diffusion Modeling - From Theory to Implementation WS 2023-24 (University of Saarland)"
+  repo-branch: main
+  repo-url: "https://github.com/akansh12/Troj_diffusion_seminar"
